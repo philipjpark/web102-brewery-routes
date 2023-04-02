@@ -23,7 +23,17 @@ h3 {
   margin: auto;
   width: 100%;
 	justify-content: center;
-	max-width: 30em;
+	max-width: 10em;
+  background-color: #f7f5f5;
+  padding-top: 20px;
+  color: #614b4e;
+}
+
+.select-bar{
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  max-width: 10em;
   background-color: #f7f5f5;
   padding-top: 20px;
   color: #614b4e;
