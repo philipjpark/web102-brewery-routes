@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 // import BreweryInfo from "./Components/breweryInfo";
 // import SideNav from "./Components/sideNav";
+import { Link } from "react-router-dom";
 
 function App() {
   const [list, setList] = useState(null);
@@ -27,9 +28,15 @@ function App() {
     setSelectedType(event.target.value);
   };
 
+  const filteredList = list?.filter((brewery) => {
+    const selectedStateMatches = selectedState === '' || brewery.state.toLowerCase().includes(selectedState.toLowerCase());
+    const selectedTypeMatches = selectedType === '' || brewery.brewery_type === selectedType;
+    return selectedStateMatches && selectedTypeMatches;
+  });
+
   return (
     <div className="whole-page"> 
-      <h1>🍺A List of Breweries</h1>
+      <h1>🍺🍺 A List of Breweries </h1>
       <h3>Search for breweries:</h3>
 
       {/* //fetches all of the breweries and displays them in a list
@@ -69,7 +76,7 @@ function App() {
       </ul> */}
 
       {/* fetches breweries by state and by type */}
-      <ul>
+      {/* <ul>
         {list && Object.entries(list).map(([key, value]) => {
           if ((selectedState === '' || value.state.toLowerCase().includes(selectedState.toLowerCase())) &&
               (selectedType === '' || value.brewery_type === selectedType)) {
@@ -77,7 +84,19 @@ function App() {
           }
           return null;
         })}
-      </ul>
+      </ul> */}
+
+      <h3>
+        {filteredList?.map(brewery => (
+          <Link
+            key={brewery.id}
+            style={{ color: "#614b4e" }}
+            to={`/brewDetails/${brewery.id}`}
+          >
+            <li>{brewery.name}</li>
+          </Link>
+        ))}
+      </h3>
     </div>
   );
 }

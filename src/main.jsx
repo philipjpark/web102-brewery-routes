@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Routes>
         <Route path="/" element={<Layout />}>
         <Route index={true} element={<App />} />
-        <Route index={false} path="/brewDetails/:symbol" element={<DetailView />} />
+        <Route index={false} path="/brewDetails/:id" element={<DetailView />} />
       </Route>
     </Routes>
   </BrowserRouter>

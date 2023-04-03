@@ -8,7 +8,7 @@ const BrewDetail = () => {
     useEffect(() => {
         const getBreweryDetail = async () => {
           const response = await fetch(
-            `https://api.openbrewerydb.org/v1/breweries/${params.symbol}`
+            `https://api.openbrewerydb.org/v1/breweries/${params.id}`
           );
           const json = await response.json();
           setFullDetails(json);
