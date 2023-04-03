@@ -29,8 +29,8 @@ function App() {
 
   return (
     <div className="whole-page"> 
-      <h1>🍺Breweries List</h1>
-      <h3>Search for breweries.</h3>
+      <h1>🍺A List of Breweries</h1>
+      <h3>Search for breweries:</h3>
 
       {/* //fetches all of the breweries and displays them in a list
       {list && Object.entries(list).map(([key, value]) => (
@@ -78,9 +78,6 @@ function App() {
           return null;
         })}
       </ul>
-
-
-
     </div>
   );
 }
