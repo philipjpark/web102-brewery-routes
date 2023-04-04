@@ -74,7 +74,8 @@ nav {
 
 .home-link 
 {
+  font-family: 'Courier New', monospace;
   border:1px dotted white;
-  background:#1d1f1d;
+  background:#614b4e;
   width:75px;
 }
