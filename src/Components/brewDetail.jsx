@@ -24,8 +24,8 @@ const BrewDetail = () => {
             <h2>{fullDetails.name}</h2>
             <p>Brewery by type: {fullDetails.brewery_type}</p>
             <p>{fullDetails.address_1}</p>
-            <p>{fullDetails.city} {fullDetails.state_province} {fullDetails.postal_code}</p>
-            <p>{fullDetails.phone}</p>
+            <p>{fullDetails.city}, {fullDetails.state_province} {fullDetails.postal_code}</p>
+            <p>Phone:{fullDetails.phone}</p>
             <p><a href={fullDetails.website_url}>{fullDetails.website_url}</a></p>
       </div>
             ) : null}

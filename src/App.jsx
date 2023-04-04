@@ -3,6 +3,7 @@ import './App.css';
 // import BreweryInfo from "./Components/breweryInfo";
 // import SideNav from "./Components/sideNav";
 import { Link } from "react-router-dom";
+import BrewChart from "./Components/brewChart";
 
 function App() {
   const [list, setList] = useState(null);
@@ -97,6 +98,10 @@ function App() {
           </Link>
         ))}
       </h3>
+
+      <div>
+      <BrewChart />
+    </div>
     </div>
   );
 }

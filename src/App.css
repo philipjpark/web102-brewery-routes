@@ -8,6 +8,8 @@
 body {
   background-color: #E4DDDE;
   color: #614b4e;
+  font-family: 'Courier New', monospace;
+  margin: 0;
 }
 
 h1 {
@@ -23,7 +25,7 @@ h3 {
   margin: auto;
   width: 100%;
 	justify-content: center;
-	max-width: 10em;
+	max-width: 15em;
   background-color: #f7f5f5;
   padding-top: 20px;
   color: #614b4e;
@@ -33,7 +35,7 @@ h3 {
   margin: auto;
   width: 100%;
   justify-content: center;
-  max-width: 10em;
+  max-width: 15em;
   background-color: #f7f5f5;
   padding-top: 20px;
   color: #614b4e;
