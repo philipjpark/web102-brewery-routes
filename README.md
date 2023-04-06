@@ -32,7 +32,8 @@ Here's a walkthrough of implemented user stories:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-![Kapture 2023-04-04 at 00 54 07](https://user-images.githubusercontent.com/66290921/229692131-e22b56ab-c255-4982-a802-0c5c3f1bae04.gif)
+![Kapture 2023-04-06 at 00 30 20](https://user-images.githubusercontent.com/66290921/230272712-70c10212-1492-47b7-82ef-eb549b3ce6ab.gif)
+
 
 
 <!-- Replace this with whatever GIF tool you used! -->
